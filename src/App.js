@@ -9,6 +9,7 @@ class App extends React.Component {
     this.state = {
       locations : ["uppal", "Gandipet", "Hussain sagar", "kukatpally", "Secunderabad"]
     }
+    this.allLocations =  ["uppal", "Gandipet", "Hussain sagar", "kukatpally", "Secunderabad"];
     
   }
 
@@ -64,7 +65,8 @@ class App extends React.Component {
 
   filterInput = (e)=>{
     const query = e.target.value;
-    this.setState({lo})
+    const filter = this.allLocations.filter(loc => loc.toLowerCase().includes(query.toLowerCase()) )
+    this.setState({ locations:filter })
   }
 
   markOnMap(venue) {
