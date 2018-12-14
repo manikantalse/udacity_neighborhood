@@ -44,6 +44,7 @@ class App extends React.Component {
         })
         .catch(error => {
           console.log(error);
+          // this is 
         });
     })
 
@@ -100,7 +101,6 @@ if ('serviceWorker' in navigator) {
   });
  } else {
   console.log('No service-worker on this browser');
-  //
  }
   }
 
