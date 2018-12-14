@@ -100,6 +100,7 @@ if ('serviceWorker' in navigator) {
   });
  } else {
   console.log('No service-worker on this browser');
+  //
  }
   }
 
